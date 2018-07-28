@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+/*color guide:
+#97ad00 green
+#cb7d20 orange
+#952 accent orange (dark)
+*/
+
+/*limited reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+a {
+	color: #cb7d20;
+}
+a:hover {
+	color: #952;
+}
+
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+html {
+	background: #97ad00;
+}
+body {
+	font: 100% Verdana, Helvetica, sans-serif;
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0 50px;
+	text-align:left;
+	position: relative;
+	background: white;
+}
+
+nav ul, ul.menu {
+	list-style: none;
+}
+
+/* layout styles */
+#mainHeader {
+	height: 185px;
+}
+.main-col {
+	float: left;
+	width: 600px;
+	padding-right: 20px;
+	margin-bottom: 2em;
+	border-right: 1px solid #7f7f7f;
+}
+.main-col ul {
+	list-style: none;
+}
+.main-col li {
+	margin-bottom: 0.5em;
+}
+.news {
+	float: right;
+	clear: right;
+	width: 450px;
+	margin-bottom: 0;
+}
+
+footer#pageFooter {
+	clear: both;
+	overflow: auto;
+}
+
+.floatRight {
+	float: right;
+}
+.floatLeft {
+	float: left;
+}
+.imgRight {
+	float: right;
+	margin-left: 1em;
+	margin-bottom: 1 em;
+}
+
+/*-------------presentation styles---------------*/
+
+/*header styles*/
+#mainHeader {
+	background: url(../_images/h_logo.png) no-repeat;
+	padding: 75px 0 0 245px;
+	position: relative;
+	border-bottom: 2px solid #7f7f7f;
+}
+.branding {
+	padding-top: 277px;
+	background: url(../_images/soccer.jpg) no-repeat center top;
+}
+.profile {
+	padding-top: 177px;
+	background: url(../_images/profile.jpg) no-repeat center top;
+}
+.product {
+	padding-top: 177px;
+	background: url(../_images/bars.jpg) no-repeat center top;
+}
+#mainHeader h1 span {
+	position: absolute;
+	left: -2000em;
+}
+#mainHeader nav {
+	position: absolute;
+	left: 225px;
+	top: 0;
+	padding-top: 15px;
+}
+#mainHeader ul {
+	float: left;
+}
+#mainHeader ul li {
+	float: left;
+}
+#mainHeader li a{
+	font-size: 1.2em;
+	color: #000;
+	padding: 0 20px;
+	margin-right: 40px;
+	text-decoration: none;
+}
+#mainHeader li a.current {
+	color: #cb7d20;
+}
+#mainHeader li a:hover {
+	color: #cb7d20;
+}
+#mainHeader h1 {
+	font-size: 6em;
+	color: #97ad00;
+	font-weight: normal;
+}
+#mainHeader p {
+	font-weight: normal;
+	font-size: 2em;
+	color: #7d7d7d;
+}
+
+.breadcrumbs {
+	font-size: .9em;
+	color: #cb7d20;
+	margin-top: 1em;
+}
+main header h2 {
+	font-weight: normal;
+	font-size: 1.8em;
+	margin-top: .5em;
+}
+main article h3 {
+	font-weight: normal;
+	color: #7f7f7f;
+	font-size: 3em;
+	margin-bottom: .2em;
+}
+.prod-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.prod-nav li {
+	background: #cb7d20;
+}
+.prod-nav li:hover {
+	background: #97ad00;
+}
+.prod-nav a {
+	display: block;
+	padding: 210px 0 10px 25px;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	margin-bottom: 2em;
+	color: white;
+	text-decoration: none;
+}
+.apparel {
+	background: url(../_images/apparel.jpg) no-repeat;
+}
+.supplement {
+	background: url(../_images/supplements.jpg) no-repeat;
+}
+.bars {
+	background: url(../_images/protein-bars.jpg) no-repeat;
+}
+.water {
+	background: url(../_images/mineral-water.jpg) no-repeat;
+}
+
+main p, main address {
+	color: #666;
+	line-height: 1.6;
+	margin-bottom: 1em;
+}
+main p.summary {
+	font-size: 1.2em;
+	font-style: italic;
+}
+main img{
+	display: block;
+}
+main .author {
+	font-style: normal;
+}
+main h4 {
+	font-size: 1em;
+	margin-top: 1.2em;
+	margin-bottom: 1em;
+	color: #000;
+}
+main time.pubdate {
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+.news {
+	font-size: 90%;
+}
+.news h2, .reviews h2{
+	font-size: 2.6em;
+	font-weight: normal;
+	color: #7f7f7f;
+	margin-bottom: .5em;
+}
+.reviews .review-summary {
+	color: #3c6b92;
+	margin-bottom: 1em;
+	font-size: 1.2em;
+}
+.reviews h3 {
+	font-size: 2em;
+	font-weight: normal;
+	color: #7f7f7f;
+	margin-bottom: 0;
+}
+.news article {
+	background: #F4DFCB;
+	padding: 1em 1em;
+	margin-bottom: 1.5em;
+}
+.news ul {
+	list-style: none;
+}
+.news li {
+	margin-bottom: 0.5em;
+}
+.news article h3 {
+	font-size: 1.6em;
+	margin-bottom: .2em;
+	color: #000;
+	font-weight:bold;
+}
+.news .byline {
+	font-size: 1.4em;
+	color: #666;
+	font-weight: normal;
+	line-height: 1.2;
+	margin-bottom: .2em;
+}
+.news article p {
+	line-height: 1.8;
+	color: #333;
+	margin-bottom:1em;
+}
+.news .pubdate {
+	color: #666;
+}
+
+.news aside, .reviews article {
+	background: #F4DFCB;
+	padding: 0 20px 20px;
+	margin-bottom: 1.5em;
+}
+.news aside h3 {
+	font-size: 1.6em;
+	color: #000;
+	background: #97ad00;
+	margin: 0 -20px .5em;
+	padding: .5em;
+	font-weight: normal;
+}
+.reviews article h3 {
+	font-size: 1em;
+	color: #fff;
+	background: #97ad00;
+	margin: 0 -20px .5em;
+	padding: .5em;
+	font-weight: normal;
+}
+.reviews article h3 span {
+	font-size: 1.4em;
+}
+.reviews article p {
+	line-height: 1.4;
+	color: #333;
+	margin-bottom:.5em;
+}
+.reviews article p.item-reviewed {
+	font-style: italic;
+}
+.reviews article p.rating {
+	font-weight: bold;
+}
+
+/*footer styles*/
+#pageFooter {
+	border-top: 2px solid #7f7f7f;
+	padding: 2em;
+}
+#pageFooter div.leftCol {
+	float: left;
+	width: 600px;
+}
+#pageFooter div.rightCol {
+	float: right;
+	width: 420px;
+	text-align: right;
+}
+#pageFooter div.rightCol a {
+	color: #666;
+}
+#pageFooter div.rightCol a:hover {
+	color: #952;
+}
+#pageFooter p {
+	margin-bottom: 1em;
+	color: #666;
+}
+#pageFooter p.topLink {
+	background: url(../_images/up.gif) no-repeat right center;
+	padding-right: 20px;
+}
+#pageFooter small {
+	font-style: italic;
+}
